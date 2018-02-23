@@ -8,7 +8,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ###Question 2
-```
+
+```{r question 2}
 library(readr)
 read.csv('imports-85.data')
 column_names <- c('symboling', 'normalized_losses', 'make', 'fuel_type', 'aspiration', 'num_of_doors', 'body_style', 'drive_wheels', 'engine_location', 'wheel_base', 'length', 'width', 'height', 'curb_weight', 'engine_type', 'num_of_cylinders', 'engine_size', 'fuel_system', 'bore', 'stroke', 'compression_ratio', 'horsepower', 'peak_rpm', 'city_mpg', 'highway_mpg', 'price')
@@ -31,7 +32,7 @@ str(read_csv('imports-85.data', col_names = column_names, col_types = 'ddccccccc
   E. If you convert dat as an R matrix, the structure of the data will change. Since matrices can only have columns of the same data type, everything will be converted to either integers or doubles/reals.
 
 ###Question 4
-```
+```{r question 4}
 data <- read.csv('imports-85.data', col.names = column_names, colClasses = column_types, na.strings = "?", stringsAsFactors = FALSE)
 hist(data$price, main =paste("Histogram of Price"), col = "lightblue")
 boxplot(data$horsepower, horizontal = TRUE)
@@ -49,12 +50,85 @@ stars(data[data$aspiration == "turbo",c(11,12,13,26)])
 
 
 ###Question 5
-```
+```{r question 5}
 mean(data[data$fuel_type == "gas", 26], na.rm = TRUE)
+mean(data[data$fuel_type == "diesel", 26], na.rm = TRUE)
 ```
-  A. 12913.19
-```
+  A. 12913.19 for gas. 15838.15 for diesel.
+```{r q5b}
 data[data$num_of_cylinders == "twelve", "make"]
 ```
   B. Jaguar
+```{r q5c}
+names(which.max(table(data[data$fuel_type == "diesel", 3])))
 ```
+  C. Peugot
+```{r q5d}
+data[data$horesepower == max(data[,22], na.rm = TRUE), 26]
+```
+  D. N/A
+```{r q5e}
+quantile(data[,24], probs = .10, na.rm = TRUE)
+```
+  E. 17
+```{r q5f}
+quantile(data[,25], probs = .90, na.rm = TRUE)
+```
+  F. 38
+```{r q5g}
+median(data[data$city_mpg <= quantile(data[,24], probs = .10, na.rm = TRUE), 26], na.rm = TRUE)
+```
+  G.$32250
+
+###Question 6
+
+  A. R will report a NULL since the column doesn't exist
+  
+  B. The following command that fail to return the vector mpg is command 4.
+  
+  C. Command 4 fails because we need to specify which column to call upon. The name of the column is a character but without quotes, the function isn't calling upon a character.
+  
+  D. No, when an R list is included as a column of a data frame, each component of the list is passed through as a separate argument. It won't take the list as one column.
+  
+  E. If you take a data frame and apply as.list() to it, you turn the data frame into a list. Each column of the data frame is now a list too. So, the result is a list with a bunch of lists inside it with each list being what used to be a column of the data frame.
+
+  F. You can convert abc to a data frame with the data.frame() function.
+  
+###Question 7
+
+```{r q7}
+library(corrplot)
+na.omit(data)
+omitted_data <- na.omit(data)
+qdat <- omitted_data[ -c(1:9, 15, 16, 18)]
+matrix(cor(qdat, qdat), ncol = 14)
+matrix_data <- matrix(cor(qdat, qdat), ncol = 14)
+matrix_data
+
+corrplot(matrix_data, method = "circle")
+corrplot(matrix_data, method = "number")
+```
+
+Looking at the correlograms, I notice a few patterns. The first, and most obvious one, is the correlation of one across the graph in a diagonal. This is because the variable is being test against itself, which will always be one. I also immediately noticed that columns 8 and 9, which are stroke and compression_ratio are not very correlated with any of the other variables besides themselves. Column 11, peak_rpm also has a weak correlation with the rest of the variables. Columns 12 and 13, city_mpg and highway_mpg are negatively correlated with the other variables. Lastly, the rest of the variables tend to have some correlation with themselves and price. 
+
+###Question 8.1
+```{r q8.1}
+pca_qdat <- prcomp(qdat, scale. = TRUE)
+eigenvalues <- pca_qdat$sdev^2
+loadings <- pca_qdat$rotation
+round(loadings, 3)
+scores <- pca_qdat$x
+round(head(scores, 5), 3)
+eigenvalues
+```
+The proportion of variation captured by the first three components are the cumulative percentages of the first three components. This is (7.7804 + 2.0461 + 1.3182)/(14). 14 is the sum of all the eigenvalues. The result is 79.605. So, the first three components captures 79.605% of the variation.
+
+###Question 8.2
+```{r q8.2}
+plot(scores[,'PC1'], scores[,'PC2'], xlab = 'PC1', ylab = 'PC2')
+```
+```{r 8.2pt2}
+plot(loadings[,'PC1'], loadings[,'PC2'], xlab = "PC1", ylab = "PC2")
+```
+
+The plots show us the variation and relativity of the components. We can see that the components are related in various aspects and the different variables in data. We can see a pattern with the PC1 scores being clustered around -.3 showing the variation between principle component tending to go that way.
