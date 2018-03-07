@@ -1,0 +1,336 @@
+              name             team_name game_date
+1   andre_iguodala Golden State Warriors   3/24/17
+2   andre_iguodala Golden State Warriors   11/3/16
+3   andre_iguodala Golden State Warriors  10/25/16
+4   andre_iguodala Golden State Warriors   11/3/16
+5   andre_iguodala Golden State Warriors    1/8/17
+6   andre_iguodala Golden State Warriors   3/16/17
+7   andre_iguodala Golden State Warriors    1/2/17
+8   andre_iguodala Golden State Warriors   12/7/16
+9   andre_iguodala Golden State Warriors   2/28/17
+10  andre_iguodala Golden State Warriors    2/1/17
+11  andre_iguodala Golden State Warriors  11/25/16
+12  andre_iguodala Golden State Warriors   2/13/17
+13  andre_iguodala Golden State Warriors  12/28/16
+14  andre_iguodala Golden State Warriors   3/28/17
+15  andre_iguodala Golden State Warriors   12/7/16
+16  andre_iguodala Golden State Warriors  11/16/16
+17  andre_iguodala Golden State Warriors  11/18/16
+18  andre_iguodala Golden State Warriors   2/13/17
+19  andre_iguodala Golden State Warriors   2/11/17
+20  andre_iguodala Golden State Warriors  11/25/16
+21  andre_iguodala Golden State Warriors   2/10/17
+22  andre_iguodala Golden State Warriors   1/16/17
+23  andre_iguodala Golden State Warriors   1/16/17
+24  andre_iguodala Golden State Warriors    1/6/17
+25  andre_iguodala Golden State Warriors   2/13/17
+26  andre_iguodala Golden State Warriors    3/2/17
+27  andre_iguodala Golden State Warriors    3/2/17
+28  andre_iguodala Golden State Warriors  10/28/16
+29  andre_iguodala Golden State Warriors  12/17/16
+30  andre_iguodala Golden State Warriors   12/7/16
+31  andre_iguodala Golden State Warriors  11/28/16
+32  andre_iguodala Golden State Warriors   3/26/17
+33  andre_iguodala Golden State Warriors  11/28/16
+34  andre_iguodala Golden State Warriors  12/28/16
+35  andre_iguodala Golden State Warriors   3/29/17
+36  andre_iguodala Golden State Warriors    2/2/17
+37  andre_iguodala Golden State Warriors  12/23/16
+38  andre_iguodala Golden State Warriors   3/31/17
+39  andre_iguodala Golden State Warriors   3/18/17
+40  andre_iguodala Golden State Warriors   11/9/16
+41  andre_iguodala Golden State Warriors   11/1/16
+42  andre_iguodala Golden State Warriors    1/8/17
+43  andre_iguodala Golden State Warriors   3/24/17
+44  andre_iguodala Golden State Warriors  10/28/16
+45  andre_iguodala Golden State Warriors   3/28/17
+46  andre_iguodala Golden State Warriors   3/31/17
+47  andre_iguodala Golden State Warriors   3/20/17
+48  andre_iguodala Golden State Warriors   2/28/17
+49  andre_iguodala Golden State Warriors   1/28/17
+50  andre_iguodala Golden State Warriors   2/23/17
+51  andre_iguodala Golden State Warriors  10/30/16
+52  andre_iguodala Golden State Warriors   1/28/17
+53  andre_iguodala Golden State Warriors   1/18/17
+54  andre_iguodala Golden State Warriors   11/3/16
+55  andre_iguodala Golden State Warriors  12/28/16
+56  andre_iguodala Golden State Warriors   2/10/17
+57  andre_iguodala Golden State Warriors    1/2/17
+58  andre_iguodala Golden State Warriors  12/28/16
+59  andre_iguodala Golden State Warriors  11/18/16
+60  andre_iguodala Golden State Warriors   11/1/16
+61  andre_iguodala Golden State Warriors  12/25/16
+62  andre_iguodala Golden State Warriors    3/2/17
+63  andre_iguodala Golden State Warriors    4/4/17
+64  andre_iguodala Golden State Warriors   3/31/17
+65  andre_iguodala Golden State Warriors   3/31/17
+66  andre_iguodala Golden State Warriors   3/31/17
+    season period minutes_remaining minute
+1     2016      3                 2     34
+2     2016      2                10     14
+3     2016      2                 0     24
+4     2016      2                11     13
+5     2016      4                 0     48
+6     2016      3                 5     31
+7     2016      4                 7     41
+8     2016      4                 9     39
+9     2016      2                 0     24
+10    2016      2                 0     24
+11    2016      1                 0     12
+12    2016      1                 0     12
+13    2016      2                 3     21
+14    2016      3                 5     31
+15    2016      3                 3     33
+16    2016      2                 1     23
+17    2016      1                 3      9
+18    2016      1                 1     11
+19    2016      1                 0     12
+20    2016      2                 3     21
+21    2016      3                 1     35
+22    2016      2                 5     19
+23    2016      4                 9     39
+24    2016      2                 2     22
+25    2016      1                 2     10
+26    2016      4                 0     48
+27    2016      1                 2     10
+28    2016      4                11     37
+29    2016      2                 0     24
+30    2016      2                 3     21
+31    2016      1                 2     10
+32    2016      1                 0     12
+33    2016      4                10     38
+34    2016      4                 8     40
+35    2016      4                 2     46
+36    2016      3                 0     36
+37    2016      2                 0     24
+38    2016      3                 4     32
+39    2016      1                 3      9
+40    2016      2                 3     21
+41    2016      1                 3      9
+42    2016      1                 3      9
+43    2016      3                 3     33
+44    2016      3                 0     36
+45    2016      1                 3      9
+46    2016      4                 0     48
+47    2016      2                 2     22
+48    2016      4                 5     43
+49    2016      3                 3     33
+50    2016      3                 5     31
+51    2016      2                 0     24
+52    2016      2                 0     24
+53    2016      4                10     38
+54    2016      4                10     38
+55    2016      3                 1     35
+56    2016      2                 4     20
+57    2016      3                 0     36
+58    2016      4                11     37
+59    2016      2                 3     21
+60    2016      4                 9     39
+61    2016      2                 0     24
+62    2016      2                 0     24
+63    2016      1                 0     12
+64    2016      1                 2     10
+65    2016      2                 0     24
+66    2016      4                 8     40
+    seconds_remaining shot_made_flag
+1                  35    missed_shot
+2                  51    missed_shot
+3                   6      made_shot
+4                  10    missed_shot
+5                  32      made_shot
+6                  30      made_shot
+7                  57      made_shot
+8                  31      made_shot
+9                  23      made_shot
+10                  2      made_shot
+11                 44      made_shot
+12                 41      made_shot
+13                 34      made_shot
+14                 56      made_shot
+15                 23      made_shot
+16                 23      made_shot
+17                 36      made_shot
+18                  3      made_shot
+19                 59      made_shot
+20                 24      made_shot
+21                 21      made_shot
+22                  8      made_shot
+23                 39      made_shot
+24                 34    missed_shot
+25                 55      made_shot
+26                 56      made_shot
+27                 35      made_shot
+28                  8      made_shot
+29                  8      made_shot
+30                 28      made_shot
+31                 29      made_shot
+32                 45      made_shot
+33                 39      made_shot
+34                  7      made_shot
+35                 20    missed_shot
+36                  0      made_shot
+37                 49      made_shot
+38                 13    missed_shot
+39                 45      made_shot
+40                 48      made_shot
+41                 11    missed_shot
+42                 53      made_shot
+43                  1      made_shot
+44                  2      made_shot
+45                 15      made_shot
+46                 29      made_shot
+47                 32      made_shot
+48                 20    missed_shot
+49                 44      made_shot
+50                 22      made_shot
+51                 43      made_shot
+52                 28      made_shot
+53                 24      made_shot
+54                 13      made_shot
+55                 10      made_shot
+56                 36      made_shot
+57                  0    missed_shot
+58                 14      made_shot
+59                  4      made_shot
+60                 22    missed_shot
+61                 46    missed_shot
+62                 22    missed_shot
+63                 18      made_shot
+64                  2      made_shot
+65                  0      made_shot
+66                 12    missed_shot
+                        action_type      shot_type
+1               Alley Oop Dunk Shot 2PT Field Goal
+2               Alley Oop Dunk Shot 2PT Field Goal
+3               Alley Oop Dunk Shot 2PT Field Goal
+4              Alley Oop Layup shot 2PT Field Goal
+5                 Cutting Dunk Shot 2PT Field Goal
+6                 Cutting Dunk Shot 2PT Field Goal
+7                 Cutting Dunk Shot 2PT Field Goal
+8                 Cutting Dunk Shot 2PT Field Goal
+9                 Cutting Dunk Shot 2PT Field Goal
+10                Cutting Dunk Shot 2PT Field Goal
+11                Cutting Dunk Shot 2PT Field Goal
+12                Cutting Dunk Shot 2PT Field Goal
+13                Cutting Dunk Shot 2PT Field Goal
+14                Cutting Dunk Shot 2PT Field Goal
+15                Cutting Dunk Shot 2PT Field Goal
+16                Cutting Dunk Shot 2PT Field Goal
+17                Cutting Dunk Shot 2PT Field Goal
+18                Cutting Dunk Shot 2PT Field Goal
+19                Cutting Dunk Shot 2PT Field Goal
+20                Cutting Dunk Shot 2PT Field Goal
+21   Cutting Finger Roll Layup Shot 2PT Field Goal
+22   Cutting Finger Roll Layup Shot 2PT Field Goal
+23               Cutting Layup Shot 2PT Field Goal
+24               Cutting Layup Shot 2PT Field Goal
+25               Cutting Layup Shot 2PT Field Goal
+26                Driving Dunk Shot 2PT Field Goal
+27                Driving Dunk Shot 2PT Field Goal
+28                Driving Dunk Shot 2PT Field Goal
+29                Driving Dunk Shot 2PT Field Goal
+30                Driving Dunk Shot 2PT Field Goal
+31                Driving Dunk Shot 2PT Field Goal
+32                Driving Dunk Shot 2PT Field Goal
+33                Driving Dunk Shot 2PT Field Goal
+34   Driving Finger Roll Layup Shot 2PT Field Goal
+35   Driving Finger Roll Layup Shot 2PT Field Goal
+36  Driving Floating Bank Jump Shot 2PT Field Goal
+37               Driving Layup Shot 2PT Field Goal
+38               Driving Layup Shot 2PT Field Goal
+39        Driving Reverse Dunk Shot 2PT Field Goal
+40       Driving Reverse Layup Shot 2PT Field Goal
+41       Driving Reverse Layup Shot 2PT Field Goal
+42                        Dunk Shot 2PT Field Goal
+43                        Dunk Shot 2PT Field Goal
+44                        Dunk Shot 2PT Field Goal
+45                        Dunk Shot 2PT Field Goal
+46                        Dunk Shot 2PT Field Goal
+47                        Dunk Shot 2PT Field Goal
+48                        Dunk Shot 2PT Field Goal
+49                        Dunk Shot 2PT Field Goal
+50                        Dunk Shot 2PT Field Goal
+51                        Dunk Shot 2PT Field Goal
+52                        Dunk Shot 2PT Field Goal
+53                        Dunk Shot 2PT Field Goal
+54               Fadeaway Jump Shot 2PT Field Goal
+55           Finger Roll Layup Shot 2PT Field Goal
+56               Floating Jump shot 2PT Field Goal
+57               Floating Jump shot 2PT Field Goal
+58                        Hook Shot 2PT Field Goal
+59                        Hook Shot 2PT Field Goal
+60                        Hook Shot 2PT Field Goal
+61                   Jump Bank Shot 2PT Field Goal
+62                        Jump Shot 3PT Field Goal
+63                        Jump Shot 2PT Field Goal
+64                        Jump Shot 3PT Field Goal
+65                        Jump Shot 3PT Field Goal
+66                        Jump Shot 3PT Field Goal
+    shot_distance               opponent    x   y
+1               0       Sacramento Kings    0   1
+2               1  Oklahoma City Thunder  -12  13
+3               0      San Antonio Spurs    0   1
+4               1  Oklahoma City Thunder   -1  11
+5               0       Sacramento Kings    0   1
+6               0          Orlando Magic    0   1
+7               0         Denver Nuggets    0   1
+8               0   Los Angeles Clippers    0   1
+9               0     Washington Wizards    0   1
+10              0      Charlotte Hornets    0   1
+11              0     Los Angeles Lakers    0   1
+12              0         Denver Nuggets    0   1
+13              0        Toronto Raptors    0   1
+14              0        Houston Rockets    0   1
+15              0   Los Angeles Clippers    0   1
+16              0        Toronto Raptors    0   1
+17              0         Boston Celtics    0   1
+18              0         Denver Nuggets    0   1
+19              0  Oklahoma City Thunder    0   1
+20              0     Los Angeles Lakers    0   1
+21              1      Memphis Grizzlies   10   8
+22              1    Cleveland Cavaliers  -11   7
+23              0    Cleveland Cavaliers   -1   8
+24              1      Memphis Grizzlies   10  11
+25              1         Denver Nuggets  -14   7
+26              0          Chicago Bulls   -2   0
+27              0          Chicago Bulls    0   1
+28              0   New Orleans Pelicans    0   1
+29              0 Portland Trail Blazers    0   1
+30              0   Los Angeles Clippers    0   1
+31              0          Atlanta Hawks    0   1
+32              0      Memphis Grizzlies    0   1
+33              0          Atlanta Hawks    0   1
+34              2        Toronto Raptors   -6  23
+35              1      San Antonio Spurs    9  11
+36              7   Los Angeles Clippers   46  62
+37              1        Detroit Pistons   -9   7
+38              2        Houston Rockets  -17  21
+39              0        Milwaukee Bucks    0   1
+40              1       Dallas Mavericks   14   2
+41              0 Portland Trail Blazers    2   7
+42              0       Sacramento Kings    0   1
+43              0       Sacramento Kings    0   1
+44              0   New Orleans Pelicans    0   1
+45              0        Houston Rockets    0   1
+46              0        Houston Rockets    0   1
+47              0  Oklahoma City Thunder    0   1
+48              0     Washington Wizards    0   1
+49              0   Los Angeles Clippers    0   1
+50              0   Los Angeles Clippers    0   1
+51              0           Phoenix Suns    0   1
+52              0   Los Angeles Clippers    0   1
+53              0  Oklahoma City Thunder    0   1
+54             19  Oklahoma City Thunder  195  -1
+55              1        Toronto Raptors   -1  16
+56             17      Memphis Grizzlies -109 136
+57             10         Denver Nuggets  -29  97
+58              5        Toronto Raptors  -29  41
+59              0         Boston Celtics    0   1
+60              3 Portland Trail Blazers  -32   7
+61              7    Cleveland Cavaliers   68  36
+62             26          Chicago Bulls -191 180
+63             18 Minnesota Timberwolves  117 144
+64             27        Houston Rockets   81 262
+65             27        Houston Rockets -215 165
+66             25        Houston Rockets   87 242
+ [ reached getOption("max.print") -- omitted 305 rows ]

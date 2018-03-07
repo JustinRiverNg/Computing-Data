@@ -1,6 +1,12 @@
 #Title: Shot Charts
-#Description: 
-
+#Description: This script takes data from some of the
+# Warriors players and creates graphical shot charts
+# out of them.
+#Input(s): Data for Andre Iguodala, Draymond Green,
+# Kevin Durant, Stephen Curry, and Klay Thompson
+#Output(s): A shot chart for each of them displaying
+# their field goals, their location, and whether or
+# not they made the shot or missed it.
 #####Question4#####
 library(ggplot2)
 library(jpeg)
@@ -14,6 +20,13 @@ court_image <- rasterGrob(
 )
 
 #####Question 4.1#####
+andre_iguodala <- read.csv('/Users/justinng/hw-stat133/hw02/data/andre-iguodala.csv', stringsAsFactors = FALSE)
+draymond_green <- read.csv('/Users/justinng/hw-stat133/hw02/data/draymond-green.csv', stringsAsFactors = FALSE)
+kevin_durant <- read.csv('/Users/justinng/hw-stat133/hw02/data/kevin-durant.csv', stringsAsFactors = FALSE)
+klay_thompson <- read.csv('/Users/justinng/hw-stat133/hw02/data/klay-thompson.csv', stringsAsFactors = FALSE)
+stephen_curry <- read.csv('/Users/justinng/hw-stat133/hw02/data/stephen-curry.csv', stringsAsFactors = FALSE)
+shots_data <- rbind(andre_iguodala, draymond_green, kevin_durant, klay_thompson, stephen_curry)
+
 klay_shot_chart <- ggplot(data = klay_thompson) +
   annotation_custom(court_image, -250, 250, -50, 420) +
   geom_point(aes(x = x, y = y, color = shot_made_flag)) +
