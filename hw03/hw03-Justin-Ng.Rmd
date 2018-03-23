@@ -1,0 +1,47 @@
+---
+title: "hw03-Justin-Ng"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, fig.path = 'images/')
+```
+
+```{bash 2.1}
+touch team-names.txt
+cut -d ',' -f 2 nba2017-roster.csv | tail +2 | sort | uniq | head -n 5 > team-names.txt
+```
+
+```{bash 2.2}
+touch position-names.txt
+cut -d ',' -f 3 nba2017-roster.csv | tail +2 | sort | uniq | head > position-names.txt
+```
+
+```{bash 2.3}
+touch experience-counts.txt
+cut -d ',' -f 7 nba2017-roster.csv | sort -n | tail +2 | uniq -c | head -n 5 > experience-counts.txt
+```
+
+```{bash 2.4}
+touch LAC.csv
+grep -e LAC -e team nba2017-roster.csv | cat > LAC.csv
+```
+
+```{bash 2.5}
+grep LAL nba2017-roster.csv | cut -d ',' -f 6 | sort | uniq -c | cat
+```
+
+```{bash 2.6}
+grep CLE nba2017-roster.csv | wc -l | cat
+```
+
+```{bash 2.7}
+touch gsw-height-weight.csv
+grep -e GSW -e player nba2017-roster.csv | cut -d ',' -f 1 -f 4 -f 5 | cat > gsw-height-weight.csv
+```
+
+```{bash 2.8}
+touch top10-salaries.csv
+cut -d ',' -f 1 -f 8 nba2017-roster.csv | sort -t ',' -k 2 -n -r | head -n 10 > top10-salaries.csv
+```
+
