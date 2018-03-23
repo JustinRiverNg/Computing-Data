@@ -49,3 +49,33 @@ grep -e GSW -e player nba2017-roster.csv | cut -d ',' -f 1 -f 4 -f 5 | cat > gsw
 touch top10-salaries.csv
 cut -d ',' -f 1 -f 8 nba2017-roster.csv | sort -t ',' -k 2 -n -r | head -n 10 > top10-salaries.csv
 ```
+
+``` r
+source('code/binomial-functions.R')
+
+bin_probability(10, 3, (1/6))
+```
+
+    ## [1] 0.1550454
+
+``` r
+plot(bin_distribution(10, 0.25))
+```
+
+![](images/Rmd%20file-1.png)
+
+``` r
+x <- 0
+for (i in 4:5) {
+x <- x + (bin_probability(5, i, 0.35))
+}
+x
+```
+
+    ## [1] 0.0540225
+
+``` r
+plot(bin_distribution(15, 0.35))
+```
+
+![](images/Rmd%20file-2.png)
