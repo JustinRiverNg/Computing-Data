@@ -1,0 +1,95 @@
+---
+title: "hw04-Justin-Ng"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, fig.path = 'images/')
+```
+
+```{r Load Packages}
+library(XML)
+library(stringr)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+```
+
+
+```{r Source}
+# 1.4) Archive of "stringr"
+source('../code/archive-functions.R')
+```
+
+```{r Commands}
+raw_data <- read_archive('stringr')
+clean_data <- clean_archive(raw_data)
+plot_archive(clean_data)
+```
+
+
+```{r 1.5}
+#1.5) Archives of "dplyr", "ggplot2", "XML", and "knitr"
+raw_data_dplyr <- read_archive('dplyr')
+raw_data_ggplot2 <- read_archive('ggplot2')
+raw_data_knitr <- read_archive('knitr')
+raw_data_XML <- read_archive('XML')
+clean_dplyr <- clean_archive('dplyr')
+clean_ggplot2 <- clean_archive('ggplot2')
+clean_knitr <- clean_archive('knitr')
+clean_XML <- clean_archive('XML')
+sink('../data/dplyr-archive.csv')
+clean_dplyr
+sink()
+sink('../data/ggplot2-archive.csv')
+clean_ggplot2
+sink()
+sink('../data/knitr-archive.csv')
+clean_knitr
+sink()
+sink('../data/XML-archive.csv')
+clean_XML
+sink()
+
+clean_dplyr$date <- as.Date(clean_dplyr$date)
+clean_dplyr$size <- as.double(clean_dplyr$size)
+dplyr_final <- select(clean_dplyr, c(3, 4))
+dplyr_final
+
+clean_ggplot2$date <- as.Date(clean_ggplot2$date)
+clean_ggplot2$size <- as.double(clean_ggplot2$size)
+ggplot2_final <- select(clean_ggplot2, c(3, 4))
+ggplot2_final
+
+clean_knitr$date <- as.Date(clean_knitr$date)
+clean_knitr$size <- as.double(clean_knitr$size)
+knitr_final <- select(clean_knitr, c(3, 4))
+knitr_final
+
+clean_XML$date <- as.Date(clean_XML$date)
+clean_XML$size <- as.double(clean_XML$size)
+XML_final <- select(clean_XML, c(3, 4))
+XML_final
+
+clean_group <- rbind(clean_dplyr, clean_ggplot2, clean_knitr, clean_XML)
+
+ggplot(data = clean_group) + geom_step(aes(color = name, x = date, y = size))
+
+ggplot(data = clean_group) + geom_step(aes(color = name, x = date, y = size)) + facet_wrap(~name)
+```
+
+```{r Question 3}
+#3) Data "Emotion in Text"
+tweet <- read.csv('../data/text-emotion.csv', stringsAsFactors = FALSE)
+```
+
+```{r Question 3.1}
+#3.1) Number of characters per tweet
+tweet_count <- data.frame(str_count(tweet$content, pattern = '.'))
+tweet_count
+ggplot(data = tweet_count) + geom_histogram(aes(x = tweet_count$str_count.tweet.content..pattern.......), binwidth = 5, boundary = 0)
+```
+
+```{r Question 3.2}
+#3.2) Number of Mentions
+```
