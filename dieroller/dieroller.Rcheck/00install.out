@@ -1,0 +1,8 @@
+* installing *source* package ‘dieroller’ ...
+** R
+** preparing package for lazy loading
+Error in check_sides(sides) : 
+'sides' must be on length 6
+Error : unable to load R code in package ‘dieroller’
+ERROR: lazy loading failed for package ‘dieroller’
+* removing ‘/Users/justinng/hw-stat133/dieroller/hw05/dieroller.Rcheck/dieroller’
